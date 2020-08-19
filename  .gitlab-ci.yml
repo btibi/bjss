@@ -7,7 +7,7 @@ stages:
 
 
 before_script:
-  - echo "Start CI"
+  - echo "Start CI "
   - chmod +x mvnw
 
 maven-build:
@@ -37,4 +37,4 @@ deploy:
 
 
 after_script:
-  - echo "End CI"
+  - echo "End CI "
