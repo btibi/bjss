@@ -65,8 +65,7 @@ Check the [OpenAPI documentation](http://localhost:8080/swagger-ui.html)
     curl -X POST "http://localhost:8080/api/cvs" -H "Content-Type: application/json" -d "{\"name\":\"Bill\",\"skills\":[\"RestApi\"],\"companyHistories\":[{\"companyName\":\"Microsoft\",\"startDate\":\"2015-06-01\",\"endDate\":\"2018-07-31\"}]}"
     
 ## Update item [PUT /api/cvs/{id}](http://localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/cv-api/replaceCv)
-    curl -X PUT "http://localhost:8080/api/cvs/4" -H "Content-Type: application/json" -d "{\"name\":\"Bill\",\"skills\":[\"RestApi\"],\"companyHistories\":[{\"companyName\":\"Microsoft\",\"startDate\":\"2015-06-01\",\"endDat
-    e\":\"2018-07-31\"}]}"
+    curl -X PUT "http://localhost:8080/api/cvs/4" -H "Content-Type: application/json" -d "{\"name\":\"Bill\",\"skills\":[\"RestApi\"],\"companyHistories\":[{\"companyName\":\"Microsoft\",\"startDate\":\"2015-06-01\",\"endDate\":\"2018-07-31\"}]}"
 
 ## Delete item [DELETE /api/cvs/{id}](http://localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/cv-api/deleteCv)
     curl -X DELETE "http://localhost:8080/api/cvs/4"    
