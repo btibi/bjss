@@ -53,7 +53,7 @@ We can chek the data in the [H2 Database Consol](http://localhost:8080/h2-consol
 # Endpoints
 Check the [OpenAPI documentation](http://localhost:8080/swagger-ui.html)
 
-# Examples
+# How to use the endpoint
 ## List all items [GET /api/cvs](http://localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/cv-api/all) 
     curl -X GET "http://localhost:8080/api/cvs"
 
