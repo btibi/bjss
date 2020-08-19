@@ -1,0 +1,9 @@
+version: '3'
+services:
+  bjss:
+    image: bjss:latest
+    ports:
+      - "8080:8080"
+      - "5005:5005"
+    environment:
+      - JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,address=5005,server=y,suspend=n

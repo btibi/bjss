@@ -1,0 +1,40 @@
+image: java:8
+
+stages:
+  - build
+  - test
+  - deploy
+
+
+before_script:
+  - echo "Start CI"
+  - chmod +x mvnw
+
+maven-build:
+  stage: build
+  script: ./mvnw compile
+  artifacts:
+    paths:
+      - target/*.jar
+
+build:
+  stage: build
+  script:
+    - ./mvnw compile
+
+test:
+  stage: test
+  script:
+    - ./mvnw test
+
+deploy:
+  stage: deploy
+  script:
+    - ./mvnw deploy
+  only:
+    - master
+  when: manual
+
+
+after_script:
+  - echo "End CI"
